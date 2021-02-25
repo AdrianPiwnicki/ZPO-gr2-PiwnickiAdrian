@@ -1,0 +1,14 @@
+Wzorzec Startegia różni się od zwykłej imlementacji interfejsu tym, że posiada główną klase, która posiada
+referencje do obiektu konkretnej strategii, która jest interfejsem dla wszystkich konkretnych implementacji
+strategii, czyli klasy konteksu.
+Wzorzec strategia rozwiązuje problemy czytelności bloków i ich kodów co pozwala na łatwe utrzymanie kodu.
+
+Zalety wzorca Strategia:
+*pozwala na usuwanie wyrażeń warunkowych
+*pozwala na łatwe testowanie klasy KLIENT i klasy STARTEGIA
+*pozwala na modyfikowanie algorytmu w czasie działania programu
+*pozwala na prostą analizę kodu, który posiada większą ilość algorytmów
+
+Wady wzorca Strategia:
+*powstaje więcej klas w tym wzorcu
+*bardziej skomplikowany sposób pobrania danych z klasy kontekstu
