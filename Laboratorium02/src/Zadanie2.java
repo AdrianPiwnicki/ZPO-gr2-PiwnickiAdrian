@@ -7,34 +7,47 @@ public class Zadanie2 {
         private int iloscGlosnikow;
         Kodowanie kodowanie;
 
-        Dzwiek(int iloscGlosnikow)
+        void ustaw()
         {
-            this.iloscGlosnikow = iloscGlosnikow;
+            if(this.iloscGlosnikow > 2)
+                this.kodowanie = new DolbyDigital();
+            else
+                this.kodowanie = new DolbyProLogic();
+        }
+
+    }
+
+    interface Kodowanie
+    {
+        String koduj();
+    }
+
+    public static class DolbyProLogic implements Kodowanie
+    {
+        @Override
+        public String koduj() {
+            return "Ustawiono DolbyProLogic";
         }
     }
 
-    public static class Kodowanie
+    public static class DolbyDigital implements Kodowanie
     {
-        private String typKodowania;
-        Kodowanie(Dzwiek obj)
-        {
-            //DolbyDigital jest ustawiany jeśli ilość głośników w zestawie jest większa od 2
-            if (obj.iloscGlosnikow > 2)
-                typKodowania="DolbyDigital";
-            else
-                //jeżeli jest 2 lub mniej głośników to ustawia DolbyProLogic
-                typKodowania="DolbyProLogic";
+        @Override
+        public String koduj() {
+            return "Ustawiono DolbyDigital";
         }
     }
 
     public static void main(String[] args) {
-        Dzwiek dzwiek1 = new Dzwiek(2);
-        dzwiek1.kodowanie = new Kodowanie(dzwiek1);
-        System.out.println(dzwiek1.kodowanie.typKodowania);
+        Dzwiek zestawPierwszy = new Dzwiek();
+        zestawPierwszy.iloscGlosnikow = 3;
+        zestawPierwszy.ustaw();
+        System.out.println(zestawPierwszy.kodowanie.koduj());
 
-        Dzwiek dzwiek2 = new Dzwiek(5);
-        dzwiek2.kodowanie = new Kodowanie(dzwiek2);
-        System.out.println(dzwiek2.kodowanie.typKodowania);
-
+        Dzwiek zestawDrugi = new Dzwiek();
+        zestawDrugi.iloscGlosnikow = 2;
+        zestawDrugi.ustaw();
+        System.out.println(zestawDrugi.kodowanie.koduj());
     }
+
 }
