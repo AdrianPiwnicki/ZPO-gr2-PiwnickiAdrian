@@ -6,6 +6,11 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Laboratorium02" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Laboratorium02" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
