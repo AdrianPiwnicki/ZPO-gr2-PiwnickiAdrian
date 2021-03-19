@@ -1,0 +1,5 @@
+1. Jakie jest najczęstsze wykorzystanie wzorca Obserwator?
+Wzorzec Obserwator najczęściej jest stosowany wszędzie, gdzie
+stan jednego obiketu uzależniony będzie od stanu drugiego obiektu.
+Jednym z głównych zastosowań można spotkać w wzorcu architektonicznym MVC.
+Stosuje się go do połączeń między wyszczególnionymi komponentami.
