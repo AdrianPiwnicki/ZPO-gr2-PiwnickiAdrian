@@ -1,0 +1,9 @@
+1. Jakie jest najczęstsze wykorzystanie wzorca Dekorator?
+
+Wykorzystanie:
+* gdy chcemy w sposób dynamiczny dodac nowe zachowania do obiektu bez wpływu na pozostałe obiekty
+* gdy chcemy dodać nowe zachowania do obiektu, jeżeli istnieje możliwość że będą zmieniane w przyszłości
+* gdy rozszerzanie funkcjonalności poprzez podklasy przestaje być pratyczne, np.
+  jeżeli do hierarchii klas musimy dodać nowe podklasy zmieniające zachowania każdego
+  liścia z danej hierarchii. W danej sytuacji lepiej jest stworzyć nową podklasę klasy głównej,
+  która będzie modyfikować odpowiednie zachowanie
