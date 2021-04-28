@@ -1,0 +1,13 @@
+Zastosowania wzorca Adapter:
+* Gdy klasa nie może być użyta ponieważ ma niekompatybilny interfejs.
+* Gdy nie mamy kodu źródłowego klas nie możemy zmienić ich interfejsu a nawet jeśli
+  mamy kod źródłowy klasy nie powinniśmy raczej zmieniać interfejsu klasy.
+
+Zastosowania wzorca Fasada:
+* Kiedy potrzebujemy dostarczyć prostszy interfejs do złożonego podsystemu
+* Kiedy istnieje szereg zależności pomiędzy klientem a klasami implementacji
+abstrakcji
+* Kiedy wprowadzenie „warstw” do systemu jest potrzebne albo pożądane
+
+Główna różnica między adapterem a fasadą jest taka iż subklasy we wzorcu fasada mogą zostać zmodyfikowane i
+wtedy trzeba również zmodyfikować klasę fasada, natomiast we wzorcu adapter subklasy nigdy nie zostaną zmodyfikowane.

@@ -1,0 +1,3 @@
+Tworzymy klasy CzcionkaPogrubiona, CzcionkaKursywa oraz FileOpen. Następnie
+tworzymy klasę Fasada, która posiada dwie funkcje. Jedna otwierająca plik z pogrubioną czcionką,
+a druga otwierająca plik z kursywą.
