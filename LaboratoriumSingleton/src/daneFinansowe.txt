@@ -1,0 +1,2 @@
+minimum plan: plan1 plan2 plan3 plan4 plan5
+wykonanie sprzedaży: sprzedaż1 sprzedaż2 sprzedaż3

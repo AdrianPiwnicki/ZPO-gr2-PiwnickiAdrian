@@ -1,0 +1,3 @@
+Wzorzec Singleton stosuje się najczęściej przy połączeniu z bazą danych, która używa wiele
+fragmentów kodu.
+Stosuje się ją również, gdy chcemy koniecznie mieć ścisłą kontrolnę nad zmiennymi globalnymi.

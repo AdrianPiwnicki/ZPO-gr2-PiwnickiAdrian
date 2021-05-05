@@ -1,0 +1,23 @@
+4. W jaki sposób zaimplementować wzorzec Singleton tak, aby
+można go było wykorzystaćw programach współbieżnych? Podać przykład takiej implementacji.
+
+Wystarczy zmodyfikować podstawowy szablon Singletona o słowa kluczowe volatile oraz synchronized.
+volatile - informacja dla wątków w programie, że zmienna jest ulotna
+synchronized - obsługa funkcji przez najszybszy wątek, reszta czeka w kolejce
+
+Przykład implementacji na podstawie zadania 3:
+
+class Singleton{
+    private static volatile Singleton instance = null;
+    public String daneFinansowe;
+
+    private Singleton(){
+        System.out.println("Singleton Dane Finansowe created");
+    }
+
+    public static synchronized Singleton getInstance(){
+        if(instance == null)
+            instance = new Singleton();
+        return instance;
+    }
+}
